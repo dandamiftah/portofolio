@@ -7,13 +7,14 @@
 
      <div class="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
          <!-- project 2 -->
+         <!-- ===== Project Card ===== -->
          <div
              class="max-w-sm bg-[#0f172a] rounded-2xl overflow-hidden shadow-lg border border-gray-800 transition-transform transform hover:-translate-y-2 hover:shadow-indigo-700/40">
+
              <!-- Gambar Project -->
              <div class="relative">
                  <img src="https://raw.githubusercontent.com/dandamiftah/mycdn/main/porto/olshop-home.png"
                      alt="E-Commerce Platform" class="w-full h-48 object-cover">
-                 <!-- Shadow hanya di bawah -->
                  <div
                      class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#242e40]/90 via-[#242e40]/40 to-transparent">
                  </div>
@@ -31,15 +32,15 @@
                  <div class="flex flex-wrap gap-2 mb-5">
                      <span class="px-3 py-1 bg-indigo-900 text-indigo-300 text-xs font-medium rounded-md">PHP</span>
                      <span
-                         class="px-3 py-1 bg-indigo-900 text-indigo-300 text-xs font-medium rounded-md">Codeigniter</span>
-                     <span class="px-3 py-1 bg-indigo-900 text-indigo-300 text-xs font-medium rounded-md">MySql</span>
+                         class="px-3 py-1 bg-indigo-900 text-indigo-300 text-xs font-medium rounded-md">CodeIgniter</span>
+                     <span class="px-3 py-1 bg-indigo-900 text-indigo-300 text-xs font-medium rounded-md">MySQL</span>
                      <span
                          class="px-3 py-1 bg-indigo-900 text-indigo-300 text-xs font-medium rounded-md">Bootstrap</span>
                  </div>
 
                  <!-- Tombol -->
                  <div class="flex gap-3">
-                     <a href="#"
+                     <button onclick="openPreviewModal()"
                          class="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white text-sm font-semibold rounded-lg transition">
                          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
                              stroke="currentColor">
@@ -49,13 +50,12 @@
                                  d="M12 12V4l9 5-9 5-9-5 9-5v8z" />
                          </svg>
                          Preview
-                     </a>
-
+                     </button>
                  </div>
              </div>
          </div>
 
-         <!-- akhir project 2 -->
+         <!-- akhir project 1 -->
 
          <!-- project 2 -->
          <div
@@ -94,7 +94,7 @@
 
                  <!-- Tombol -->
                  <div class="flex gap-3">
-                     <a href="#"
+                     <button onclick="openPreviewModal(2)"
                          class="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white text-sm font-semibold rounded-lg transition">
                          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
                              stroke="currentColor">
@@ -104,7 +104,7 @@
                                  d="M12 12V4l9 5-9 5-9-5 9-5v8z" />
                          </svg>
                          Preview
-                     </a>
+                     </button>
 
                  </div>
              </div>
@@ -150,7 +150,7 @@
 
                  <!-- Tombol -->
                  <div class="flex gap-3">
-                     <a href="#"
+                     <button onclick="openPreviewModal(3)"
                          class="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white text-sm font-semibold rounded-lg transition">
                          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
                              stroke="currentColor">
@@ -160,7 +160,7 @@
                                  d="M12 12V4l9 5-9 5-9-5 9-5v8z" />
                          </svg>
                          Preview
-                     </a>
+                     </button>
 
                  </div>
              </div>
@@ -206,7 +206,7 @@
 
                  <!-- Tombol -->
                  <div class="flex gap-3">
-                     <a href="#"
+                     <button onclick="openPreviewModal(4)"
                          class="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white text-sm font-semibold rounded-lg transition">
                          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
                              stroke="currentColor">
@@ -216,7 +216,7 @@
                                  d="M12 12V4l9 5-9 5-9-5 9-5v8z" />
                          </svg>
                          Preview
-                     </a>
+                     </button>
 
                  </div>
              </div>
@@ -262,7 +262,7 @@
 
                  <!-- Tombol -->
                  <div class="flex gap-3">
-                     <a href="#"
+                     <button onclick="openPreviewModal(5)"
                          class="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white text-sm font-semibold rounded-lg transition">
                          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
                              stroke="currentColor">
@@ -272,7 +272,7 @@
                                  d="M12 12V4l9 5-9 5-9-5 9-5v8z" />
                          </svg>
                          Preview
-                     </a>
+                     </button>
 
                  </div>
              </div>

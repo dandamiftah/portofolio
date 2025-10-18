@@ -12,20 +12,31 @@
         html {
             scroll-behavior: smooth;
         }
+
+        .scrollbar-hidden::-webkit-scrollbar {
+            display: none;
+
+        }
+
+        .scrollbar-hidden {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+
+        }
     </style>
 </head>
 
 <body class="bg-[#0f172a] text-gray-300 font-sans">
 
     <?php
-    
+
     include 'SectionHome.php';
     include 'SectionProfile.php';
     include 'SectionWork.php';
     include 'SectionProjects.php';
     include 'SectionSkill.php';
     include 'SectionContact.php';
-
+    include 'modal.php';
     ?>
 
     <footer class="text-center py-6 text-gray-500 border-t border-gray-700 text-sm sm:text-base">
@@ -33,6 +44,44 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/a2e0e6a5a7.js" crossorigin="anonymous"></script>
+    <!-- ===== Script ===== -->
+    <script>
+        function openPreviewModal(modalNumber) {
+            const modalId = `previewModal${modalNumber || ''}`;
+            const contentId = `modalContent${modalNumber || ''}`;
+
+            const modal = document.getElementById(modalId);
+            const content = document.getElementById(contentId);
+
+            if (modal && content) {
+                modal.classList.remove("hidden");
+                setTimeout(() => {
+                    content.classList.remove("scale-90", "opacity-0");
+                    content.classList.add("scale-100", "opacity-100");
+                }, 50);
+            }
+        }
+
+
+        function closePreviewModal(modalNumber) {
+            const modalId = `previewModal${modalNumber || ''}`;
+            const contentId = `modalContent${modalNumber || ''}`;
+
+            const modal = document.getElementById(modalId);
+            const content = document.getElementById(contentId);
+
+            if (content) {
+                content.classList.remove("scale-100", "opacity-100");
+                content.classList.add("scale-90", "opacity-0");
+
+                setTimeout(() => {
+                    if (modal) {
+                        modal.classList.add("hidden");
+                    }
+                }, 300);
+            }
+        }
+    </script>
 </body>
 
 </html>
